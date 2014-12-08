@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NeR-ap-AnK">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Child View Controller-->
+        <scene sceneID="YeD-6p-ktL">
+            <objects>
+                <viewController id="rxX-Pe-S73" customClass="ChildViewController" customModule="RolodexNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QgH-hy-gwB"/>
+                        <viewControllerLayoutGuide type="bottom" id="TsF-aX-ZA1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8dj-51-lKP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm in Storyboard A!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfK-8J-1jg">
+                                <rect key="frame" x="224" y="251" width="153" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK2-wQ-YVn">
+                                <rect key="frame" x="277" y="280" width="32" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BE0-E6-fxt" kind="show" id="kgN-87-7I1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4D-Oy-rCq">
+                                <rect key="frame" x="250" y="318" width="100" height="30"/>
+                                <state key="normal" title="Show Rolodex">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showRolodexTouched:" destination="rxX-Pe-S73" eventType="touchUpInside" id="NEd-VA-9d1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.37823394440000002" green="0.80794270830000003" blue="0.37616983230000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="nfK-8J-1jg" secondAttribute="centerY" id="2R8-aG-GlR"/>
+                            <constraint firstAttribute="centerX" secondItem="a4D-Oy-rCq" secondAttribute="centerX" id="68Q-5e-hwD"/>
+                            <constraint firstItem="dK2-wQ-YVn" firstAttribute="top" secondItem="nfK-8J-1jg" secondAttribute="bottom" constant="8" id="MaO-R4-ohP"/>
+                            <constraint firstItem="a4D-Oy-rCq" firstAttribute="top" secondItem="dK2-wQ-YVn" secondAttribute="bottom" constant="8" id="bGk-w0-FQt"/>
+                            <constraint firstAttribute="centerY" secondItem="dK2-wQ-YVn" secondAttribute="centerY" constant="5" id="fg0-oW-RMW"/>
+                            <constraint firstAttribute="centerX" secondItem="dK2-wQ-YVn" secondAttribute="centerX" constant="7" id="gJZ-F3-37U"/>
+                            <constraint firstAttribute="centerX" secondItem="nfK-8J-1jg" secondAttribute="centerX" id="grC-8m-wJL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2R8-aG-GlR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="7h1-0b-wWA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OIP-Nf-RPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1158" y="337"/>
+        </scene>
+        <!--Child View Controller-->
+        <scene sceneID="BcW-bm-zPH">
+            <objects>
+                <viewController id="BE0-E6-fxt" customClass="ChildViewController" customModule="RolodexNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mV0-e8-NpC"/>
+                        <viewControllerLayoutGuide type="bottom" id="v6r-3c-ff0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YGc-mc-16P">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Storyboard A Page 2!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vg-hM-bvQ">
+                                <rect key="frame" x="218" y="270" width="165" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11d-4M-KCN">
+                                <rect key="frame" x="250" y="299" width="100" height="30"/>
+                                <state key="normal" title="Show Rolodex">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showRolodexTouched:" destination="BE0-E6-fxt" eventType="touchUpInside" id="t6Q-mK-v66"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="11d-4M-KCN" secondAttribute="centerX" id="FHK-F3-O9e"/>
+                            <constraint firstAttribute="centerY" secondItem="3vg-hM-bvQ" secondAttribute="centerY" constant="0.5" id="POX-hz-NBk"/>
+                            <constraint firstAttribute="centerX" secondItem="3vg-hM-bvQ" secondAttribute="centerX" id="YT6-C7-cLZ"/>
+                            <constraint firstAttribute="centerY" secondItem="11d-4M-KCN" secondAttribute="centerY" constant="-14" id="ikJ-0N-Ath"/>
+                            <constraint firstItem="11d-4M-KCN" firstAttribute="top" secondItem="3vg-hM-bvQ" secondAttribute="bottom" constant="8" id="jfv-Cz-e1X"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="POX-hz-NBk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijN-ok-Pmr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1905" y="337"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rP6-bJ-9QA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NeR-ap-AnK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3uu-gV-at4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rxX-Pe-S73" kind="relationship" relationship="rootViewController" id="gq1-DE-4JE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qD7-og-gjj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="337"/>
+        </scene>
+    </scenes>
+</document>

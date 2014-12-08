@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		253B752F1A3547B500BE28AF /* Dollar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253B752C1A35478800BE28AF /* Dollar.framework */; };
+		253B75351A35783E00BE28AF /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253B75341A35783E00BE28AF /* ChildViewController.swift */; };
+		253DFBBC1A33D32E00788524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253DFBBB1A33D32E00788524 /* AppDelegate.swift */; };
+		253DFBC11A33D32E00788524 /* RolodexNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253DFBC01A33D32E00788524 /* RolodexNavigationController.swift */; };
+		253DFBC41A33D32E00788524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253DFBC21A33D32E00788524 /* Main.storyboard */; };
+		253DFBC61A33D32E00788524 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 253DFBC51A33D32E00788524 /* Images.xcassets */; };
+		253DFBC91A33D32E00788524 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 253DFBC71A33D32E00788524 /* LaunchScreen.xib */; };
+		253DFBD51A33D32E00788524 /* RolodexNavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253DFBD41A33D32E00788524 /* RolodexNavigationControllerTests.swift */; };
+		253DFBDF1A33D6F300788524 /* StoryboardA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253DFBDE1A33D6F300788524 /* StoryboardA.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		253B752B1A35478800BE28AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 253B75261A35478800BE28AF /* Dollar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92E0D03C19467C67002ACC3D;
+			remoteInfo = Dollar;
+		};
+		253B752D1A35478800BE28AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 253B75261A35478800BE28AF /* Dollar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92E6686F19F09C6400BB4FB8;
+			remoteInfo = DollarTests;
+		};
+		253DFBCF1A33D32E00788524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 253DFBAE1A33D32E00788524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 253DFBB51A33D32E00788524;
+			remoteInfo = RolodexNavigationController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		253B75261A35478800BE28AF /* Dollar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Dollar.xcodeproj; path = Dollar.swift/Dollar/Dollar.xcodeproj; sourceTree = "<group>"; };
+		253B75341A35783E00BE28AF /* ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		253DFBB61A33D32E00788524 /* RolodexNavigationController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RolodexNavigationController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		253DFBBA1A33D32E00788524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		253DFBBB1A33D32E00788524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		253DFBC01A33D32E00788524 /* RolodexNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolodexNavigationController.swift; sourceTree = "<group>"; };
+		253DFBC31A33D32E00788524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		253DFBC51A33D32E00788524 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		253DFBC81A33D32E00788524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		253DFBCE1A33D32E00788524 /* RolodexNavigationControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RolodexNavigationControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		253DFBD31A33D32E00788524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		253DFBD41A33D32E00788524 /* RolodexNavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolodexNavigationControllerTests.swift; sourceTree = "<group>"; };
+		253DFBDE1A33D6F300788524 /* StoryboardA.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardA.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		253DFBB31A33D32E00788524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				253B752F1A3547B500BE28AF /* Dollar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		253DFBCB1A33D32E00788524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		253B75271A35478800BE28AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				253B752C1A35478800BE28AF /* Dollar.framework */,
+				253B752E1A35478800BE28AF /* DollarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		253B75301A35766400BE28AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				253B75261A35478800BE28AF /* Dollar.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		253DFBAD1A33D32E00788524 = {
+			isa = PBXGroup;
+			children = (
+				253B75301A35766400BE28AF /* Frameworks */,
+				253DFBB81A33D32E00788524 /* RolodexNavigationController */,
+				253DFBD11A33D32E00788524 /* RolodexNavigationControllerTests */,
+				253DFBB71A33D32E00788524 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		253DFBB71A33D32E00788524 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				253DFBB61A33D32E00788524 /* RolodexNavigationController.app */,
+				253DFBCE1A33D32E00788524 /* RolodexNavigationControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		253DFBB81A33D32E00788524 /* RolodexNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				253DFBBB1A33D32E00788524 /* AppDelegate.swift */,
+				253DFBC01A33D32E00788524 /* RolodexNavigationController.swift */,
+				253DFBC21A33D32E00788524 /* Main.storyboard */,
+				253DFBC51A33D32E00788524 /* Images.xcassets */,
+				253DFBC71A33D32E00788524 /* LaunchScreen.xib */,
+				253DFBB91A33D32E00788524 /* Supporting Files */,
+				253DFBDE1A33D6F300788524 /* StoryboardA.storyboard */,
+				253B75341A35783E00BE28AF /* ChildViewController.swift */,
+			);
+			path = RolodexNavigationController;
+			sourceTree = "<group>";
+		};
+		253DFBB91A33D32E00788524 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				253DFBBA1A33D32E00788524 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		253DFBD11A33D32E00788524 /* RolodexNavigationControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				253DFBD41A33D32E00788524 /* RolodexNavigationControllerTests.swift */,
+				253DFBD21A33D32E00788524 /* Supporting Files */,
+			);
+			path = RolodexNavigationControllerTests;
+			sourceTree = "<group>";
+		};
+		253DFBD21A33D32E00788524 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				253DFBD31A33D32E00788524 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		253DFBB51A33D32E00788524 /* RolodexNavigationController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 253DFBD81A33D32E00788524 /* Build configuration list for PBXNativeTarget "RolodexNavigationController" */;
+			buildPhases = (
+				253DFBB21A33D32E00788524 /* Sources */,
+				253DFBB31A33D32E00788524 /* Frameworks */,
+				253DFBB41A33D32E00788524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RolodexNavigationController;
+			productName = RolodexNavigationController;
+			productReference = 253DFBB61A33D32E00788524 /* RolodexNavigationController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		253DFBCD1A33D32E00788524 /* RolodexNavigationControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 253DFBDB1A33D32E00788524 /* Build configuration list for PBXNativeTarget "RolodexNavigationControllerTests" */;
+			buildPhases = (
+				253DFBCA1A33D32E00788524 /* Sources */,
+				253DFBCB1A33D32E00788524 /* Frameworks */,
+				253DFBCC1A33D32E00788524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				253DFBD01A33D32E00788524 /* PBXTargetDependency */,
+			);
+			name = RolodexNavigationControllerTests;
+			productName = RolodexNavigationControllerTests;
+			productReference = 253DFBCE1A33D32E00788524 /* RolodexNavigationControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		253DFBAE1A33D32E00788524 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Dadoune;
+				TargetAttributes = {
+					253DFBB51A33D32E00788524 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					253DFBCD1A33D32E00788524 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 253DFBB51A33D32E00788524;
+					};
+				};
+			};
+			buildConfigurationList = 253DFBB11A33D32E00788524 /* Build configuration list for PBXProject "RolodexNavigationController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 253DFBAD1A33D32E00788524;
+			productRefGroup = 253DFBB71A33D32E00788524 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 253B75271A35478800BE28AF /* Products */;
+					ProjectRef = 253B75261A35478800BE28AF /* Dollar.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				253DFBB51A33D32E00788524 /* RolodexNavigationController */,
+				253DFBCD1A33D32E00788524 /* RolodexNavigationControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		253B752C1A35478800BE28AF /* Dollar.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Dollar.framework;
+			remoteRef = 253B752B1A35478800BE28AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		253B752E1A35478800BE28AF /* DollarTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DollarTests.xctest;
+			remoteRef = 253B752D1A35478800BE28AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		253DFBB41A33D32E00788524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				253DFBC41A33D32E00788524 /* Main.storyboard in Resources */,
+				253DFBC91A33D32E00788524 /* LaunchScreen.xib in Resources */,
+				253DFBC61A33D32E00788524 /* Images.xcassets in Resources */,
+				253DFBDF1A33D6F300788524 /* StoryboardA.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		253DFBCC1A33D32E00788524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		253DFBB21A33D32E00788524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				253DFBC11A33D32E00788524 /* RolodexNavigationController.swift in Sources */,
+				253DFBBC1A33D32E00788524 /* AppDelegate.swift in Sources */,
+				253B75351A35783E00BE28AF /* ChildViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		253DFBCA1A33D32E00788524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				253DFBD51A33D32E00788524 /* RolodexNavigationControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		253DFBD01A33D32E00788524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 253DFBB51A33D32E00788524 /* RolodexNavigationController */;
+			targetProxy = 253DFBCF1A33D32E00788524 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		253DFBC21A33D32E00788524 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				253DFBC31A33D32E00788524 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		253DFBC71A33D32E00788524 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				253DFBC81A33D32E00788524 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		253DFBD61A33D32E00788524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		253DFBD71A33D32E00788524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		253DFBD91A33D32E00788524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RolodexNavigationController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = RolodexNavigationController;
+			};
+			name = Debug;
+		};
+		253DFBDA1A33D32E00788524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RolodexNavigationController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = RolodexNavigationController;
+			};
+			name = Release;
+		};
+		253DFBDC1A33D32E00788524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RolodexNavigationControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = RolodexNavigationControllerTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RolodexNavigationController.app/RolodexNavigationController";
+			};
+			name = Debug;
+		};
+		253DFBDD1A33D32E00788524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RolodexNavigationControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = RolodexNavigationControllerTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RolodexNavigationController.app/RolodexNavigationController";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		253DFBB11A33D32E00788524 /* Build configuration list for PBXProject "RolodexNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				253DFBD61A33D32E00788524 /* Debug */,
+				253DFBD71A33D32E00788524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		253DFBD81A33D32E00788524 /* Build configuration list for PBXNativeTarget "RolodexNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				253DFBD91A33D32E00788524 /* Debug */,
+				253DFBDA1A33D32E00788524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		253DFBDB1A33D32E00788524 /* Build configuration list for PBXNativeTarget "RolodexNavigationControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				253DFBDC1A33D32E00788524 /* Debug */,
+				253DFBDD1A33D32E00788524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 253DFBAE1A33D32E00788524 /* Project object */;
+}
