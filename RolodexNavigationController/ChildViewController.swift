@@ -9,36 +9,63 @@
 import UIKit
 
 class ChildViewController: UIViewController {
+	
+	@IBOutlet weak var previousController: UIButton!
+	@IBOutlet weak var nextController: UIButton!
+	
+	enum ControllerNavigation: Int {
+		case Previous, Next
+	}
+	
+	var rolodexController: RolodexNavigationController? {
+		get {
+			if let viewController = self.navigationController?.parentViewController {
+				if viewController.isKindOfClass(RolodexNavigationController) {
+					return viewController as? RolodexNavigationController
+				}
+			}
+			return nil
+		}
+	}
 
 	@IBAction func showRolodexTouched(sender: AnyObject) {
-		if let navigationController = self.navigationController {
-			if let viewController = navigationController.parentViewController {
-				var rolodexContoller = viewController as RolodexNavigationController
-				rolodexContoller.showRolodex = true;
+		self.rolodexController?.showRolodex = true;
+	}
+	
+	@IBAction func goToController(sender: UIButton) {
+		if let rolodexController = self.rolodexController {
+			let button = ControllerNavigation(rawValue: sender.tag)
+			var index = 0
+			if let button = ControllerNavigation(rawValue: sender.tag) {
+				switch button {
+				case .Next:
+					index = rolodexController.selectedIndex! + 1
+				case .Previous:
+					index = rolodexController.selectedIndex! - 1
+				}
 			}
+			let viewController = rolodexController.viewControllers[index]
+			rolodexController.goToViewController(viewController, animated: true)
 		}
 	}
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+		var randomRed = CGFloat(drand48())
+		var randomGreen = CGFloat(drand48())
+		var randomBlue = CGFloat(drand48())
+		self.view.backgroundColor = UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+	
+	override func viewDidAppear(animated: Bool) {
+		super.viewDidAppear(animated)
+		self.previousController.enabled = true
+		self.previousController.enabled = true
+		if self.rolodexController?.viewControllers.first == self.navigationController {
+			self.previousController.enabled = false
+		} else if self.rolodexController?.viewControllers.last == self.navigationController {
+			self.nextController.enabled = false
+		}
+	}
 
 }

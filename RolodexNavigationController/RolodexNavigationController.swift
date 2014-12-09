@@ -16,6 +16,8 @@ class RolodexNavigationController: UIViewController {
 	/// Dictionary to save tap gestures
 	private var viewTaps = [UIView: UIGestureRecognizer]()
 	
+	private var animationSpeed = 0.3
+	
 	private var _showRolodex = false
 	/// The presentation mode of the rolodex
 	var showRolodex: Bool {
@@ -43,7 +45,7 @@ class RolodexNavigationController: UIViewController {
 				}
 				
 				// Animate controller to it's new placement
-				UIView.animateWithDuration(0.2, animations: {
+				UIView.animateWithDuration(self.animationSpeed, animations: {
 					self.placeViewController(controller)
 				})
 			}
@@ -190,7 +192,7 @@ class RolodexNavigationController: UIViewController {
 			for controller in self.viewControllers {
 				// Animate controller to it's new placement
 				if (animated) {
-					UIView.animateWithDuration(0.2, animations: {
+					UIView.animateWithDuration(self.animationSpeed, animations: {
 						self.placeViewController(controller)
 						}, completion: { (complete) -> Void in
 							self.selectedController = viewController
@@ -224,11 +226,6 @@ class RolodexNavigationController: UIViewController {
 		super.addChildViewController(childController)
 		childController.didMoveToParentViewController(self)
 		self.scrollView.addSubview(childController.view)
-		
-		/// FIXME:
-		// Test code
-		childController.view.layer.borderColor = UIColor.redColor().CGColor
-		childController.view.layer.borderWidth = 3
 		
 		// Reset internal _viewControllers array
 		self._viewControllers = nil;

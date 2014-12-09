@@ -40,16 +40,38 @@
                                     <action selector="showRolodexTouched:" destination="rxX-Pe-S73" eventType="touchUpInside" id="NEd-VA-9d1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isy-76-uOG">
+                                <rect key="frame" x="248" y="394" width="104" height="30"/>
+                                <state key="normal" title="Next Controller">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToController:" destination="rxX-Pe-S73" eventType="touchUpInside" id="zBr-gB-t8r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJo-my-YCJ">
+                                <rect key="frame" x="235" y="356" width="131" height="30"/>
+                                <state key="normal" title="Previous Controller">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToController:" destination="rxX-Pe-S73" eventType="touchUpInside" id="Ake-OQ-KMm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.37823394440000002" green="0.80794270830000003" blue="0.37616983230000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="nfK-8J-1jg" secondAttribute="centerY" id="2R8-aG-GlR"/>
+                            <constraint firstAttribute="centerX" secondItem="Isy-76-uOG" secondAttribute="centerX" id="3RI-a9-ky2"/>
                             <constraint firstAttribute="centerX" secondItem="a4D-Oy-rCq" secondAttribute="centerX" id="68Q-5e-hwD"/>
+                            <constraint firstItem="Isy-76-uOG" firstAttribute="top" secondItem="fJo-my-YCJ" secondAttribute="bottom" constant="8" id="LeV-Vf-n3Y"/>
                             <constraint firstItem="dK2-wQ-YVn" firstAttribute="top" secondItem="nfK-8J-1jg" secondAttribute="bottom" constant="8" id="MaO-R4-ohP"/>
+                            <constraint firstItem="fJo-my-YCJ" firstAttribute="top" secondItem="a4D-Oy-rCq" secondAttribute="bottom" constant="8" id="SuX-5C-0VC"/>
                             <constraint firstItem="a4D-Oy-rCq" firstAttribute="top" secondItem="dK2-wQ-YVn" secondAttribute="bottom" constant="8" id="bGk-w0-FQt"/>
                             <constraint firstAttribute="centerY" secondItem="dK2-wQ-YVn" secondAttribute="centerY" constant="5" id="fg0-oW-RMW"/>
                             <constraint firstAttribute="centerX" secondItem="dK2-wQ-YVn" secondAttribute="centerX" constant="7" id="gJZ-F3-37U"/>
                             <constraint firstAttribute="centerX" secondItem="nfK-8J-1jg" secondAttribute="centerX" id="grC-8m-wJL"/>
+                            <constraint firstAttribute="centerX" secondItem="fJo-my-YCJ" secondAttribute="centerX" constant="-0.5" id="qjw-Yv-LM7"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -58,6 +80,10 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="7h1-0b-wWA"/>
+                    <connections>
+                        <outlet property="nextController" destination="Isy-76-uOG" id="NKh-Mj-PcW"/>
+                        <outlet property="previousController" destination="fJo-my-YCJ" id="i8x-6u-ZSb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIP-Nf-RPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
