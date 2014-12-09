@@ -176,6 +176,34 @@ class RolodexNavigationController: UIViewController {
 		}
 	}
 	
+	/// Navigate to another controller
+	///
+	/// :param UIViewController to navigate to
+	/// :param Bool animate to new controller
+	/// :return nil
+	func goToViewController(viewController: UIViewController, animated: Bool) {
+		if self.showRolodex {
+			self.selectedController = viewController
+			self.showRolodex = false
+		} else {
+			self._showRolodex = animated
+			for controller in self.viewControllers {
+				// Animate controller to it's new placement
+				if (animated) {
+					UIView.animateWithDuration(0.2, animations: {
+						self.placeViewController(controller)
+						}, completion: { (complete) -> Void in
+							self.selectedController = viewController
+							self.showRolodex = false
+					})
+				} else {
+					self.selectedController = viewController
+					self.placeViewController(controller)
+				}
+			}
+		}
+	}
+	
 	/// Add the initial controller of a UIStoryboard to the rolodex
 	///
 	/// :param UIStoryboard a storyboard to add
