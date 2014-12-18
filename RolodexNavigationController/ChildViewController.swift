@@ -51,20 +51,20 @@ class ChildViewController: UIViewController {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-		var randomRed = CGFloat(drand48())
+		var randomRed   = CGFloat(drand48())
 		var randomGreen = CGFloat(drand48())
-		var randomBlue = CGFloat(drand48())
+		var randomBlue  = CGFloat(drand48())
 		self.view.backgroundColor = UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
     }
 	
 	override func viewDidAppear(animated: Bool) {
 		super.viewDidAppear(animated)
-		self.previousController.enabled = true
-		self.previousController.enabled = true
+		self.previousController?.enabled = true
+		self.previousController?.enabled = true
 		if self.rolodexController?.viewControllers.first == self.navigationController {
-			self.previousController.enabled = false
+			self.previousController?.enabled = false
 		} else if self.rolodexController?.viewControllers.last == self.navigationController {
-			self.nextController.enabled = false
+			self.nextController?.enabled = false
 		}
 	}
 

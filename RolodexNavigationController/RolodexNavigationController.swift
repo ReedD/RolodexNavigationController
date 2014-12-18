@@ -16,6 +16,7 @@ class RolodexNavigationController: UIViewController {
 	/// Dictionary to save tap gestures
 	private var viewTaps = [UIView: UIGestureRecognizer]()
 	
+	/// Transition speed between tabs
 	private var animationSpeed = 0.3
 	
 	private var _showRolodex = false
@@ -52,7 +53,8 @@ class RolodexNavigationController: UIViewController {
 			if let controller = self.viewControllers.last   {
 				if self._showRolodex {
 					// Adjust content size
-					self.scrollView.contentSize = CGSize(width: self.view.frame.width, height: controller.view.frame.maxY)
+					let height = controller.view.frame.maxY - controller.view.frame.height / 2;
+					self.scrollView.contentSize = CGSize(width: self.view.frame.width, height: height)
 				}
 			}
 		}
@@ -157,13 +159,25 @@ class RolodexNavigationController: UIViewController {
 		let topPadding: CGFloat = 150
 		viewController.view.layer.zPosition = CGFloat(index) * 1000
 		if self.showRolodex  {
+			// 3D Transform
 			var transform = CATransform3DIdentity;
 			transform.m34 = 1.0 / 700;
 			transform = CATransform3DRotate(transform, 55.0 * CGFloat(M_PI) / 180.0, 1.0, 0.0, 0.0)
 			transform = CATransform3DScale(transform, 0.68, 0.68, 0.68)
 			viewController.view.frame.origin.y = CGFloat(index) * 100 - topPadding
 			viewController.view.layer.transform = transform
+
+			// Add shadow
+			let shadowPath = UIBezierPath(rect: viewController.view.bounds)
+			viewController.view.layer.masksToBounds = false
+			viewController.view.layer.shadowColor = UIColor.blackColor().CGColor
+			viewController.view.layer.shadowOffset = CGSize(width:0.0, height:-20.0)
+			viewController.view.layer.shadowRadius = 20.0
+			viewController.view.layer.shadowOpacity = 0.5
+			viewController.view.layer.shadowPath = shadowPath.CGPath
 		} else {
+			// Hide shadow
+			viewController.view.layer.shadowOpacity = 0.0
 			// Slide views of lesser index up and greater down
 			// Focus in on the selected index
 			let yOffset = self.scrollView.contentOffset.y
@@ -194,7 +208,8 @@ class RolodexNavigationController: UIViewController {
 				if (animated) {
 					UIView.animateWithDuration(self.animationSpeed, animations: {
 						self.placeViewController(controller)
-						}, completion: { (complete) -> Void in
+						self.scrollView.scrollRectToVisible(viewController.view.frame, animated: false);
+					}, completion: { (complete) -> Void in
 							self.selectedController = viewController
 							self.showRolodex = false
 					})
