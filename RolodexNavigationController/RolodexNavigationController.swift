@@ -76,7 +76,7 @@ class RolodexNavigationController: UIViewController {
 			// Build array of UIViewControllers and cache
 			var viewControllers: [UIViewController] = []
 			for controller in self.childViewControllers {
-				if controller.isKindOfClass(UIViewController) {
+				if controller is UIViewController {
 					viewControllers.append(controller as UIViewController)
 				}
 			}
@@ -227,8 +227,8 @@ class RolodexNavigationController: UIViewController {
 	/// :return nil
 	func addStoryboard(storyboard: UIStoryboard) {
 		let initialController: AnyObject = storyboard.instantiateInitialViewController()
-		if initialController.isKindOfClass(UIViewController) {
-			self.addChildViewController(initialController as UIViewController)
+		if let controller = initialController as? UIViewController {
+			self.addChildViewController(controller)
 		}
 	}
 

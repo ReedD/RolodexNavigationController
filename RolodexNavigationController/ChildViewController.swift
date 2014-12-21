@@ -19,10 +19,8 @@ class ChildViewController: UIViewController {
 	
 	var rolodexController: RolodexNavigationController? {
 		get {
-			if let viewController = self.navigationController?.parentViewController {
-				if viewController.isKindOfClass(RolodexNavigationController) {
-					return viewController as? RolodexNavigationController
-				}
+			if let controller = self.navigationController?.parentViewController as? RolodexNavigationController {
+				return controller
 			}
 			return nil
 		}
